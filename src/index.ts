@@ -33,30 +33,32 @@ const server = new Server(
 
 server.setRequestHandler(ListToolsRequestSchema, async () => {
   return {
-    tools: {
-      name: "detect",
-      description: "Detect whether the text is AI-generated",
-      inputSchema: {
-        type: "object",
-        properties: {
-          type: {
-            type: "string",
-            enum: ["general"],
-          },
-          text: {
-            type: "string",
-          },
-          detectionTypeList: {
-            type: "array",
-            items: {
-              type: "string",
-              enum: ["COPYLEAKS", "HEMINGWAY", "GRAMMARLY", "AI_SYNTAGMAS"],
+    tools: [
+        {
+            name: "detect",
+            description: "Detect whether the text is AI-generated",
+            inputSchema: {
+              type: "object",
+              properties: {
+                type: {
+                  type: "string",
+                  enum: ["general"],
+                },
+                text: {
+                  type: "string",
+                },
+                detectionTypeList: {
+                  type: "array",
+                  items: {
+                    type: "string",
+                    enum: ["COPYLEAKS", "HEMINGWAY", "GRAMMARLY", "AI_SYNTAGMAS"],
+                  },
+                },
+              },
+              required: ["type", "text", "detectionTypeList"],
             },
-          },
-        },
-        required: ["type", "text", "detectionTypeList"],
-      },
-    },
+          }
+    ],
   };
 });
 
@@ -112,7 +114,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
         content: [
           {
             type: "text",
-            text: detectData,
+            text: JSON.stringify(detectData),
           },
         ],
       };
