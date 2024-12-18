@@ -1,19 +1,15 @@
-# MCP AI Humanize Server
+# AI Humanize MCP Server
 ---
-A Model Context Protocol (MCP) server implementation for refining AI-generated content with built-in AI detection capabilities, delivering human-like text while ensuring grammatical accuracy, readability, and seamless contextual flow.
+A Model Context Protocol (MCP) server implementation for refining AI-generated content with built-in AI detection capabilities, delivering human-like text while ensuring grammatical accuracy, readability, and seamless contextual flow. Powered by [text2go](https://text2go.ai).
 
 ---
 # Table of Contents
-1. [Overview](#overview)
-2. [Features](#features)
-3. [Prerequisites](#prerequisites)
-4. [Installation](#installation)
-5. [Usage](#usage)
+1. [Features](#features)
+2. [Prerequisites](#prerequisites)
+3. [Installation](#installation)
+4. [Usage](#usage)
 
 ---
-## Overview
-This MCP Server include useful ai text hunmanlize tools powered by [text2go](https://www.text2go.ai/).
-
 ## Screenshot
 
 ![screenshot](./image/screenshot.png)
@@ -30,30 +26,27 @@ This MCP Server include useful ai text hunmanlize tools powered by [text2go](htt
 - Claude Desktop latest version
 
 ## Installation
-1. Clone the repository
-```bash
-git clone 
-```
+1. Clone this repository
 2. Install Dependencies
 ```bash
-pip install
+npm install
 ```
 3. Build
 ```bash
 npm run build
 ```
 
-3. Open Claude desktop app and go to Settings -> Developer -> Edit Config
+4. Open Claude desktop app and go to Settings -> Developer -> Edit Config
 add the following entry:
 ```json
 {
-    "ai-humanlize": {
+    "ai-humanize": {
         "command": "node",
-        "args": ["/PATH/TO/MCP/build/index.js"]
+        "args": ["<YOUR_PROJECT_PATH>/build/index.js"]
     }
 }
 ```
-4. Restart Claude desktop app.
+5. Restart Claude desktop app.
 
 ## Usage
 Ask claude to detect if your text is ai-generated.
