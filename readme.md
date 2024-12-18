@@ -16,7 +16,7 @@ Powered by [text2go](https://text2go.ai).
 
 ![screenshot](./image/screenshot.png)
 
-## ✨ Features
+## Features
 
 - 🤖 **AI Detection** - Accurately identify AI-generated content
 - 👤 **Natural Language Enhancement** - Transform robotic text into natural human-like writing
@@ -56,7 +56,7 @@ npm run build
 5. Restart Claude Desktop to apply changes
 
 
-## 💡 Usage
+## Usage
 
 ### AI Text Detection
 
