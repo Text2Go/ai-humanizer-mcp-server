@@ -21,7 +21,7 @@ const AiDetectArgumentSchema = z
 
 const server = new Server(
   {
-    name: "ai-humanlize",
+    name: "ai-humanizer",
     version: "1.0.0",
   },
   {
