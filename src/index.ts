@@ -51,7 +51,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
                   type: "array",
                   items: {
                     type: "string",
-                    enum: ["COPYLEAKS", "HEMINGWAY", "GRAMMARLY", "AI_SYNTAGMAS"],
+                    enum: ["COPYLEAKS", "HEMINGWAY", "GRAMMARLY"],
                   },
                 },
               },
@@ -94,7 +94,6 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
     if (name === "detect") {
       const argument = AiDetectArgumentSchema.parse(args);
 
-
       const detectUrl = `${API_BASE}/rewrite/text-detection`;
       const detectData = await makeRequest<AiDetectResponse>(detectUrl, argument);
 
@@ -109,12 +108,18 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
         };
       }
 
+      const responseData = {
+        ...detectData,
+        detectionResult: {
+          ...detectData.detectionResult
+        }
+      };
 
       return {
         content: [
           {
             type: "text",
-            text: JSON.stringify(detectData),
+            text: JSON.stringify(responseData),
           },
         ],
       };

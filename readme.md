@@ -1,6 +1,8 @@
 # AI Humanize MCP Server
 ---
-A Model Context Protocol (MCP) server implementation for refining AI-generated content with built-in AI detection capabilities, delivering human-like text while ensuring grammatical accuracy, readability, and seamless contextual flow. Powered by [text2go](https://text2go.ai).
+A powerful Model Context Protocol (MCP) server that helps refine AI-generated content to sound more natural and human-like. Built with advanced AI detection and text enhancement capabilities.
+
+Powered by [text2go](https://text2go.ai).
 
 ---
 # Table of Contents
@@ -14,12 +16,15 @@ A Model Context Protocol (MCP) server implementation for refining AI-generated c
 
 ![screenshot](./image/screenshot.png)
 
-## Features
-- 👤 Sound More Like Human
-- ⭐ Improve Grammatical Accuracy
-- 📋 Enhance Readability
-- 📏 Adjust the Length
-- ⚖️ Keep Specific Terms
+## ✨ Key Features
+
+- 🤖 **AI Detection** - Accurately identify AI-generated content
+- 👤 **Natural Language Enhancement** - Transform robotic text into natural human-like writing
+- ⭐ **Grammar Perfection** - Ensure flawless grammatical accuracy
+- 📋 **Readability Optimization** - Improve text flow and comprehension
+- 📏 **Length Control** - Adjust content length while preserving meaning
+- ⚖️ **Term Preservation** - Maintain specific terminology and key phrases
+
 
 ## Prerequisites
 - node version >= 16
@@ -31,13 +36,15 @@ A Model Context Protocol (MCP) server implementation for refining AI-generated c
 ```bash
 npm install
 ```
-3. Build
+3. Build the project
 ```bash
 npm run build
 ```
 
-4. Open Claude desktop app and go to Settings -> Developer -> Edit Config
-add the following entry:
+4. Configure Claude Desktop:
+   - Open Claude Desktop
+   - Navigate to Settings → Developer → Edit Config
+   - Add the following configuration:
 ```json
 {
     "ai-humanize": {
@@ -46,10 +53,15 @@ add the following entry:
     }
 }
 ```
-5. Restart Claude desktop app.
+5. Restart Claude Desktop to apply changes
 
-## Usage
-Ask claude to detect if your text is ai-generated.
+
+## 💡 Usage
+
+### AI Text Detection
+
+To check if text is AI-generated, simply ask Claude:
+
 ```text
 Is this text ai-generated:  In a fast-paced world, where technology is advancing at an exponential rate, it is crucial for businesses to adapt to new trends and keep up with the changing demands of the market.
 ```
