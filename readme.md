@@ -1,4 +1,4 @@
-# AI Humanize MCP Server
+# AI Humanizer MCP Server
 ---
 A powerful Model Context Protocol (MCP) server that helps refine AI-generated content to sound more natural and human-like. Built with advanced AI detection and text enhancement capabilities.
 
