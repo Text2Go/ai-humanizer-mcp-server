@@ -47,7 +47,7 @@ npm run build
    - Add the following configuration:
 ```json
 {
-    "ai-humanize": {
+    "ai-Humanizer": {
         "command": "node",
         "args": ["<YOUR_PROJECT_PATH>/build/index.js"]
     }
