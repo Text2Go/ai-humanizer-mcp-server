@@ -14,7 +14,7 @@ const AiDetectArgumentSchema = z
     type: z.enum(["general"]),
     text: z.string(),
     detectionTypeList: z.array(
-      z.enum(["COPYLEAKS", "HEMINGWAY", "GRAMMARLY", "AI_SYNTAGMAS"])
+      z.enum(["COPYLEAKS", "HEMINGWAY"])
     ),
   })
   .required();
