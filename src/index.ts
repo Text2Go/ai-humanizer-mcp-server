@@ -7,7 +7,7 @@ import {
 import { z } from "zod";
 
 const API_BASE = "https://api.edgeshop.ai";
-const USER_AGENT = "mcp-server-ai-humanize/1.0";
+const USER_AGENT = "ai-humanizer-mcp-server/1.0";
 
 const AiDetectArgumentSchema = z
   .object({
