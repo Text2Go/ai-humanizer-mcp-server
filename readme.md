@@ -1,4 +1,4 @@
-# AI Humanizer MCP Server
+# AI Humanize MCP Server
 ---
 A powerful Model Context Protocol (MCP) server that helps refine AI-generated content to sound more natural and human-like. Built with advanced AI detection and text enhancement capabilities.
 
@@ -6,17 +6,19 @@ Powered by [text2go](https://text2go.ai).
 
 ---
 # Table of Contents
-1. [Features](#features)
-2. [Prerequisites](#prerequisites)
-3. [Installation](#installation)
-4. [Usage](#usage)
+1. [Key Features](#-key-features)
+2. [Screenshot](#screenshot)
+3. [Prerequisites](#prerequisites)
+4. [Installation](#installation)
+5. [Usage](#-usage)
+   - [AI Text Detection](#ai-text-detection)
 
 ---
 ## Screenshot
 
 ![screenshot](./image/screenshot.png)
 
-## Features
+## ✨ Key Features
 
 - 🤖 **AI Detection** - Accurately identify AI-generated content
 - 👤 **Natural Language Enhancement** - Transform robotic text into natural human-like writing
@@ -40,14 +42,13 @@ npm install
 ```bash
 npm run build
 ```
-
 4. Configure Claude Desktop:
    - Open Claude Desktop
    - Navigate to Settings → Developer → Edit Config
    - Add the following configuration:
 ```json
 {
-    "ai-humanizer": {
+    "ai-humanize": {
         "command": "node",
         "args": ["<YOUR_PROJECT_PATH>/build/index.js"]
     }
@@ -56,7 +57,7 @@ npm run build
 5. Restart Claude Desktop to apply changes
 
 
-## Usage
+## 💡 Usage
 
 ### AI Text Detection
 
