@@ -1,6 +1,6 @@
 {
-  "name": "humanizer",
-  "version": "1.0.0",
+  "name": "ai-humanizer-mcp-server",
+  "version": "1.0.5",
   "main": "index.js",
   "keywords": [],
   "author": "",
@@ -16,7 +16,7 @@
   },
   "type": "module",
   "bin": {
-    "weather": "./build/index.js"
+    "ai-humanizer-mcp-server": "./build/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

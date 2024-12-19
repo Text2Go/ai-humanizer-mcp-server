@@ -33,6 +33,24 @@ Powered by [text2go](https://text2go.ai).
 - Claude Desktop latest version
 
 ## Installation
+### By npx
+1. Configure Claude Desktop:
+   - Open Claude Desktop
+   - Navigate to Settings → Developer → Edit Config
+   - Add the following configuration:
+```json
+{
+  "mcpServers": {
+    "ai-humanizer": {
+      "command": "npx",
+      "args": ["ai-humanizer-mcp-server"]
+    }
+  }
+}
+```
+5. Restart Claude Desktop to apply changes
+
+### By Source Code
 1. Clone this repository
 2. Install Dependencies
 ```bash
@@ -48,10 +66,12 @@ npm run build
    - Add the following configuration:
 ```json
 {
-    "ai-humanize": {
-        "command": "node",
-        "args": ["<YOUR_PROJECT_PATH>/build/index.js"]
+  "mcpServers": {
+    "ai-humanizer": {
+      "command": "node",
+      "args": ["<YOUR_PROJECT_PATH>/build/index.js"]
     }
+  }
 }
 ```
 5. Restart Claude Desktop to apply changes
