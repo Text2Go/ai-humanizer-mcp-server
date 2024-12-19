@@ -11,7 +11,7 @@ const USER_AGENT = "ai-humanizer-mcp-server/1.0";
 
 const AiDetectArgumentSchema = z
   .object({
-    type: z.enum(["general"]),
+    type: z.enum(["original_text"]),
     text: z.string(),
     detectionTypeList: z.array(
       z.enum(["COPYLEAKS", "HEMINGWAY"])
@@ -36,13 +36,13 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
     tools: [
         {
             name: "detect",
-            description: "Detect whether the text is AI-generated",
+            description: "Detect whether the text is AI-generated.  ",
             inputSchema: {
               type: "object",
               properties: {
                 type: {
                   type: "string",
-                  enum: ["general"],
+                  enum: ["original_text"],
                 },
                 text: {
                   type: "string",
@@ -51,7 +51,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
                   type: "array",
                   items: {
                     type: "string",
-                    enum: ["COPYLEAKS", "HEMINGWAY", "GRAMMARLY"],
+                    enum: ["COPYLEAKS", "HEMINGWAY"],
                   },
                 },
               },
@@ -109,10 +109,8 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       }
 
       const responseData = {
-        ...detectData,
-        detectionResult: {
-          ...detectData.detectionResult
-        }
+        ...detectData
+        ,text: undefined,
       };
 
       return {
