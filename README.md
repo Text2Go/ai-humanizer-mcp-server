@@ -48,7 +48,7 @@ Powered by [text2go](https://text2go.ai).
   }
 }
 ```
-5. Restart Claude Desktop to apply changes
+2. Restart Claude Desktop to apply changes
 
 ### By Source Code
 1. Clone this repository
