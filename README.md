@@ -43,7 +43,7 @@ Powered by [text2go](https://text2go.ai).
   "mcpServers": {
     "ai-humanizer": {
       "command": "npx",
-      "args": ["ai-humanizer-mcp-server"]
+      "args": ["-y", "ai-humanizer-mcp-server"]
     }
   }
 }
