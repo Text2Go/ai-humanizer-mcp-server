@@ -4,6 +4,8 @@ A powerful Model Context Protocol (MCP) server that helps refine AI-generated co
 
 Powered by [text2go](https://text2go.ai).
 
+<a href="https://glama.ai/mcp/servers/6jwdkla6m3"><img width="380" height="200" src="https://glama.ai/mcp/servers/6jwdkla6m3/badge" alt="AI Humanizer Server MCP server" /></a>
+
 ---
 # Table of Contents
 1. [Key Features](#-key-features)
