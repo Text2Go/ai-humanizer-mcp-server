@@ -1,5 +1,7 @@
 # AI Humanize MCP Server
 ---
+[![smithery badge](https://smithery.ai/badge/ai-humanizer-mcp-server)](https://smithery.ai/server/ai-humanizer-mcp-server)
+
 A powerful Model Context Protocol (MCP) server that helps refine AI-generated content to sound more natural and human-like. Built with advanced AI detection and text enhancement capabilities.
 
 Powered by [text2go](https://text2go.ai).
@@ -33,6 +35,15 @@ Powered by [text2go](https://text2go.ai).
 - Claude Desktop latest version
 
 ## Installation
+
+### Installing via Smithery
+
+To install AI Humanize Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/ai-humanizer-mcp-server):
+
+```bash
+npx -y @smithery/cli install ai-humanizer-mcp-server --client claude
+```
+
 ### By npx
 1. Configure Claude Desktop:
    - Open Claude Desktop
