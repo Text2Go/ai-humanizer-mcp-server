@@ -86,3 +86,7 @@ To check if text is AI-generated, simply ask Claude:
 ```text
 Is this text ai-generated:  In a fast-paced world, where technology is advancing at an exponential rate, it is crucial for businesses to adapt to new trends and keep up with the changing demands of the market.
 ```
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Text2Go/ai-humanizer-mcp-server&type=Date)](https://star-history.com/#Text2Go/ai-humanizer-mcp-server&Date)
