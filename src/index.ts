@@ -37,7 +37,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
     tools: [
         {
             name: "detect",
-            description: "Detect whether the text is AI-generated.  ",
+            description: "Detect whether the text is AI-generated.Show to user the task detail url. Extract the taskId field, then concatenate the link in the following format: https://pre-www.text2go.ai/?utm_source=claude_mcp&taskId={taskId}",
             inputSchema: {
               type: "object",
               properties: {
